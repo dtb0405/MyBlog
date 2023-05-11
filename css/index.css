@@ -1,0 +1,78 @@
+a{
+	text-decoration: none;
+	color: inherit;
+}
+#main-content{
+	width: 70%;
+	float: left;
+}
+#main-content .section{
+	background-color: #fff;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	min-height: 100px;
+	min-width: 485px;
+	padding: 20px;
+	border-radius: 10%;
+}
+#main-content .section .img-section{
+	float: left;
+	margin-right: 20px;
+}
+#main-content .section .img-section img{
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin: 0px auto;
+	border-radius: 20px;
+}
+#main-content .content-section h3{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	margin-top: -1px;
+}
+#main-content .section .img-section h4{
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+#main-content .section .img-section a{
+	color: #ef3100;
+}
+#main-content .section .img-section p{
+	line-height: 1.8em;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+#main-content .content-section div a{
+	background-color: #A0C3D2;
+	color: #000000;
+	padding: 8px 12px;
+	border-radius: 5px;
+	float: right;
+} 
+
+.most-used-languages{
+	width: 100%;
+	padding: 10px;
+	border-radius: 10%;
+}
+
+.most-used-languages .item{
+	border-bottom: 0.5px dotted #bdbdbd;
+	padding: 10px 0;
+	border-radius: 20%;
+}
+.most-used-languages .item .img-item{
+	float: left;
+	margin-right: 15px;
+}
+.most-used-languages .item .img-item img{
+	width: 40px;
+	height: 40px;
+	display: block;
+	border-radius: 20%;
+}
+.most-used-languages .item p a:hover{
+	color: #ff5722;
+}

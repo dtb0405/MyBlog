@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MyBlog</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="container">
+		<!--Header-->
+		<header>
+      		<div id="head">
+        		<div class="banner">
+        			<h1><marquee>Welcome to My Blog <img src="img/picture.webp" alt=""></marquee></h1>
+        		</div>
+      		</div>
+
+      		<!--Menu-->
+      		<div id="head-link" class="drop-menu">
+      			<div id="head-link-center">
+      				<a href="index.html">Trang chủ</a> 
+      				<a href="blog.html">Blog</a>
+      				<a href="tailieu.html">Tài liệu</a> 
+      			  	<a href="gioithieu.html">Giới thiệu</a>  
+      			  	<a href="lienhe.html">Liên hệ</a>
+      			</div>
+      		</div>
+
+		</header>
+
+		<!--Nav-->
+		<section class="content">
+		  	<div id="left">
+		  		<div class="mul">
+    					<h3 style="margin-top:10px; text-align: center; padding-left: 25px;">Bài viết phổ biến</h3>
+    				<div class="most-used-languages">
+    					<div class="item">
+							<div class="img-item">
+								<a href=""><img src="img\python.webp" alt=""></a>
+							</div>
+							<p style="margin-top:-1px"><a href="chitiet.html">Lập trình Python – Chuyển văn bản thành giọng nói</a></p>
+						</div>
+  						<div class="item">
+							<div class="img-item">
+								<a href=""><img src="img\csharp.png" alt=""></a>
+							</div>
+							<p style="margin-top:-1px"><a href="chitiet.html">Lập trình C# – Dịch ngược mã nguồn với ILSpy</a></p>
+						</div>
+						<div class="item">
+							<div class="img-item">
+								<a href=""><img src="img\indus.jpeg" alt=""></a>
+							</div>
+							<p style="margin-top:-1px"><a href="chitiet.html">Cuộc cách mạng công nhiệp 4.0</a></p>
+						</div>	
+						<div class="item">
+							<div class="img-item">
+								<a href=""><img src="img\csharp.png" alt=""></a>
+							</div>
+							<p style="margin-top:-1px"><a href="chitiet.html">Kiểm tra email hợp lệ trong C#</a></p>
+						</div>	
+						<div class="item">
+							<div class="img-item">
+								<a href=""><img src="img/sqlserver.webp" alt=""></a>
+							</div>
+							<p style="margin-top:-1px"><a href="chitiet.html">Nên viết SQL ở đâu? Stored Procedures hay ứng dụng</a></p>
+						</div>	
+						<div class="item">
+							<div class="img-item">
+								<a href=""><img src="img\csharp.png" alt=""></a>
+							</div>
+							<p style="margin-top:-1px"><a href="chitiet.html">Lập trình C# – Những tùy chỉnh Console hay ho</a></p>
+						</div>		
+	  				</div>
+				</div>
+			<br>
+
+		  		<div id="info-ad">
+		  			<div align=center>
+		  				<br><br>
+  						<h3 align="" font-size="23">Thống kê truy cập</h3>
+					</div>
+					<div align="center">
+						<p>Today's Visits: 62</p>
+						<p>Last 7 Days Visits: 1.011</p>
+						<p>Last 30 Days Visits: 5.397</p>
+						<p>Total Visits: 46.122</p>
+		  			</div>		
+				</div>	
+		  	</div>
+
+			<div id="content">
+		  		<div id="content-head">
+		  			<img style="width: 100%; padding-top: 30px" src="img/bannerCsharp.png" alt="">
+				  	<h2 style="text-align: center; font-size:25px">Tối ưu tốc độ tách chuỗi (Split) trong C#</h2>
+				  	<p style="text-align: center;">Last Update: 13 Tháng Hai, 2023</p>
+		  		</div>
+
+		  		<div id="content-main">
+			  		<p>Trước khi vào vấn đề chính, hãy cùng mình tìm hiểu sơ lược về UUID là gì nhé! Tại sao phải sử dụng UUID thay cho khóa chính tự động tăng nếu như xây dựng các hệ thống lớn. Sau đó, áp dụng tạo UUID trong C# với một đoạn code ví dụ đơn giản.</p>
+			  		<br>
+			  		<h2>UUID là gì?</h2>
+			  		<p>UUID (Universally Unique Identifier), hay còn được gọi với tên là GUID (Globally Unique Identifier) là một giá trị duy nhất dài 128 bit. Bạn có thể hiểu nôm na rằng đó là 1 mã định danh duy nhất và không có thứ hai. Tỷ lệ bị trùng UUID không hoàn toàn bằng 0, nhưng gần 0 đến mức có thể bỏ qua.</p>
+			  		<p>UUID sẽ có dạng như sau: XXXXXXXX-XXXX-</p>
+			  		<p>Lớp String của C# sẽ cung cấp nhiều phương thức Split với các tham số khác nhau:</p>
+			  		<br>
+			  		<h2>UUID có tác dụng gì?</h2>
+			  		<p>Bây giờ, hãy giả sử bạn có 1 database trên SQL Server với 1 bảng bất kỳ nào đó. Trong bảng đó, khóa chính bạn đặt là kiểu INT tự động tăng. Có phải rằng bạn sẽ dễ dàng để biết được số bản ghi hiện có của bảng đó đúng không?</p>
+			  		<p>Tiếp tục với ví dụ trên. Khóa chính tự động tăng là một phương pháp tiện lợi, tuy nhiên đó là đối với cơ sở dữ liệu quy mô nhỏ. Trong SQL Server, kiểu INT có giá trị tối đa là 2,147,483,647. Con số này có thể sẽ không đủ đổi với những hệ thống có lượng dữ liệu lớn. Chuyển sang kiểu BIGINT sẽ giải quyết được vấn đề này (BIGINT có giá trị tối đa là 9,223,372,036,854,775,807).</p>
+			  		<p>Một vấn đề nữa, khóa chính tự động tăng cần nhiều byte để lưu hơn. Do đó sẽ không phù hợp đối với hệ thống có nhiều server, nhiều người truy cập cùng một lúc.</p>
+			  		<p>→ UUID ra đời nhằm khắc phục những điểm yếu trên. Nếu bạn xây dựng một hệ thống phục vụ với số lượng người dùng lớn, vận hành trên nhiều server hay chỉ không muốn lộ ID, hãy sử dụng UUID.</p>
+			  		<br>
+			  		<h2>Tạo UUID trong C#</h2>
+			  		<span>Ví dụ này mình thực hiện trên C# NET 6.0 và dùng Visual Studio 2022.</span>
+			  		<p>Mình sẽ có 1 đoạn code đơn giản như sau:</p>
+			  		<img style="width: 100%; text-align: center;" src="img/uid.png" alt="">
+			  		<p>– Mình dùng phương thức tĩnh NewGuid() của lớp Guid để tiến hành tạo UUID (GUID).</p>
+			  		<p>– Lớp Guid sẽ nằm trong namespace System.</p>
+			  		<p>Sau khi chạy đoạn code trên thì chúng ta sẽ nhận được 1 chuỗi có dạng như dưới đây:</p>	
+			  		<img style="width: 50%; justify-content: center;" src="img/uuid.png" alt="">
+			  		<p>Để hiểu kỹ hơn về về phương thức tĩnh Guid.NewGuid, bạn có thể đọc kỹ hơn tại đây: Guid.NewGuid Method.</p>
+			  		<br>
+			  		<h2>Các bài liên quan</h2>
+			  		<p>Bạn có thế đọc thêm các bài viết về chủ đề CNTT tại đây nhé: Công nghệ thông tin.</p>
+			  		<br>
+			  		<h2>Lời kết</h2>
+			  		<p>Qua bài viết trên, mình đã giới thiệu sơ lược về UUID, tại sao nên sử dụng nó và thực hiện tạo UUID trong ngôn ngữ lập trình C# với một ví dụ đơn giản. Trong một bài viết khác, mình sẽ làm rõ hơn về UUID nhé, cụ thể là cấu trúc, cách thức tạo ra một UUID.</p>
+			  		<p>Cuối cùng, gõ chữ cũng nhiều rồi, mình sẽ kết thúc bài viết tại đây và cũng cảm ơn bạn đã đọc hết bài viết này. À mà, nếu bạn có vấn đề cần giải đáp, hãy để lại bình luận hoặc nhắn tin qua biểu tượng messenger (ở góc phải bên dưới màn hình) cho mình nhé!</p>
+		  		</div>
+		  	</div>
+
+			<div id="right">
+				<h3 style="margin-top:-20px; text-align: center; padding-left: 25px;">Quảng cáo đêyyy <img src="img/gif.gif" alt=""></h3>
+				<div id="advertisement">
+					<a href="https://tuyensinh.dainam.edu.vn/vi/tin-tuc/thong-bao-tuyen-sinh-dai-hoc-he-chinh-quy-nam-2020"><img src="img/qc1.jpeg" alt=""></a>
+					<a href="https://tuyensinh.dainam.edu.vn/vi/tin-tuc/thong-bao-tuyen-sinh-dai-hoc-he-chinh-quy-nam-2020"><img src="img/qc.jpeg" alt=""></a>
+					<a href="https://tuyensinh.dainam.edu.vn/vi/tin-tuc/thong-bao-tuyen-sinh-dai-hoc-he-chinh-quy-nam-2020"><img src="img/qc2.jpeg" alt=""></a>
+				</div>
+			</div>
+		</section>
+
+		<!--Footer-->
+		<footer>
+			<div id="footer">
+				<div id="footer-left">
+					<h1>My Blog <img src="img/picture.webp" alt=""></h1>
+					<p>Tui hong có gì ngoài trái tim yêu thưn cạ!</p>
+				</div>
+				<div id="footer-center">
+					<h3>Các câu hỏi thường gặp</h3>
+			        <ul class="faq-list">
+			          <li>
+			            <h4>Tôi có thể liên lạc với bạn bằng cách nào?</h4>
+			            <p>Liên lạc với tui qua đây nè: </p>
+			            <div align="center">
+			  				<a href="https://facebook.com/100031648871280" target="blank">
+			    				<img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" alt="facebook" />
+			  				</a>
+			  				<a href="mailto:dnagbinh12@gmail.com" target="top">
+			   					<img src="https://img.icons8.com/bubbles/50/000000/apple-mail.png" alt="email" />
+			  				</a>
+			  				<a href="https://github.com/dtb0405" target="blank">
+			   					<img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="github" />
+			  				</a>
+					  	</div>	
+			          </li>
+			          <li>
+			            <h4>Bạn có người yêu chưa?</h4>
+			            <p>Hihi bí mật nha !</p>
+			          </li>
+			        </ul>
+				</div>
+				<div id="footer-right">
+			       <div class="containerForm">
+			           <h3>Để lại lời nhắn cho tui nha</h3>
+			           <div class="formBox">
+			               <div class="inputBox w50">
+			                   <span>Email</span>               	
+			                   <input type="email" name="" required>
+			               </div>
+			               <br>
+			               <div class="inputBox w100">
+			                   <span>Lời Nhắn Của Bạn</span>
+			                   <textarea name="" required="" height="5px"></textarea>
+			               </div>
+			               <br>
+			               <div class="inputBox w100">
+			                   <input onclick="myFunction()" class="MyButton" type="submit" value="Gửi">
+			               </div>
+			       </div>
+			   	</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>
